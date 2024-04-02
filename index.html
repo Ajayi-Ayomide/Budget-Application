@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="image/icon 2.png">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body class="w-full" id="bg">
+    <section class="one">
+      <div class="container col-12">
+        <h5 class="card-title fs-2 fw-bold text-decoration-underline text-light"><img src="image/icon2.png" class="card-img-top w-25 " alt="...">  SPENDING ALERT</h5>
+        <div class="row col-12 col-sm-12">
+          <div class="card mx-auto my-5 bg-transparent" style="width: 36rem;">
+              <!-- <P class="fs-2 text-center fw-bold">SPENDING ALERT <img src="image/icon 2.png" class="card-img-top w-25 " alt="..."></P> -->
+              <div class="card-body" style="border-radius: 20px gold;">
+                <p class="card-text fw-bold text-light">SpendingAlert is your financial watchdog, delivering real-time notifications to keep you mindful of your spending habits. With customizable budgets, interactive visuals, and seamless bank integration, it empowers you to take control of your finances and make informed decisions. Stay vigilant, stay financially informed with SpendingAlert.</p>
+                <br>
+                <br>
+                <button type="button" class="form-control shadow-none btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btn">Success</button>
+              </div>
+            </div>
+
+            <div class="card mx-auto my-5 bg-transparent" style="width: 36rem;">
+              <div class="card-body" id="reveal">
+                <!-- <p class="card-text fw-bold text-light"></p> -->
+                <br>
+                <button type="button" class="form-control shadow-none btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btn">Success</button>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="two">
+        <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 fw-bolder" id="exampleModalLabel">SPENDING ALERT <img src="image/$ (1).png" alt=""> </h1>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <div class="modal-body fw-bold">
+          <input type="number" class="form-control fw-bold shadow-none" placeholder="Enter the Amount" id="bug">
+          <hr>
+          <p>
+            A wise person should have money in their head, but not in their heart. Too many people spend money they haven't earned, to buy things they don't want, to impress people they don't like.
+            <br> - Will Rogers 
+          </p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal" onclick="automate()">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+
+    <script src="budget.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      #bg{
+        background-color:#2196f3;
+        background-size:cover;
+         height: 100vh;
+      }
+    </style>
+</body>
+</html>
