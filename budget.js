@@ -20,7 +20,7 @@ function automate() {
 
 let colorCh = document.getElementById("btn");
 let imageArray = [
-  'BG.JPG', 'BG1.JPG', 'BG2.JPG','BG4.JPG', 'BG5.JPG', 'BG6.JPG',  
+  'BG.JPG', 'BG1.JPG', 'BG2.JPG', 'BG3.JPG','BG4.JPG', 'BG5.JPG', 'BG6.JPG', 'BG7.JPG' 
 ]
 colorCh.addEventListener("click", () => {
   let index = 0;
