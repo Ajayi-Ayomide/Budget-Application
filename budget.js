@@ -18,16 +18,16 @@ function automate() {
 
 
 
-// let colorCh = document.getElementById("btn");
-// let imageArray = [
-//   'BG.JPG', 'BG1.JPG', 'BG2.JPG','BG4.JPG', 'BG5.JPG', 'BG6.JPG',  
-// ]
-// colorCh.addEventListener("click", () => {
-//   let index = 0;
-//   index = Math.floor(Math.random() * imageArray.length)
-//   document.body.style.background = `url(image/${imageArray[index]})`;
-//   document.body.style.backgroundSize = `cover`
-// });
+let colorCh = document.getElementById("btn");
+let imageArray = [
+  'BG.JPG', 'BG1.JPG', 'BG2.JPG','BG4.JPG', 'BG5.JPG', 'BG6.JPG',  
+]
+colorCh.addEventListener("click", () => {
+  let index = 0;
+  index = Math.floor(Math.random() * imageArray.length)
+  document.body.style.background = `url(image/${imageArray[index]})`;
+  document.body.style.backgroundSize = `cover`
+});
 
 
 
