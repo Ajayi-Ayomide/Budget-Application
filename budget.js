@@ -8,7 +8,7 @@ function automate() {
       document.getElementById('auto').style.display= "block"
       document.getElementById('itsef').style.display= "none"
       let userBudget = document.getElementById('bug').value;
-      document.getElementById('fest').innerHTML= `Congratulations! You've successfully set your budget at ₦${userBudget} With this amount allocated, you're taking a proactive step towards financial responsibility. Remember to track your expenses diligently and adjust your spending habits accordingly to stay within your budget.`
+      document.getElementById('fest').innerHTML= `Congratulations! You've successfully set your budget at <span class="fw-bolder text-light fs-3">₦${userBudget}.</span> <br><br>With this amount allocated, you're taking a proactive step towards financial responsibility. <br> <br> Remember to track your expenses diligently and adjust your spending habits accordingly to stay within your budget.`
         console.log(userBudget)
 
         // let budget = document.getElementById ('bug').value
