@@ -16,6 +16,12 @@ function automate() {
      }
 }
 
+function spend () {
+  document.getElementById('general').style.display = 'block'
+  document.getElementById('reveal').style.display = 'none'
+  document.getElementById('auto').style.display = 'none'
+  
+}
 
 
 let colorCh = document.getElementById("btn");

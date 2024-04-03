@@ -13,7 +13,7 @@
 
 <body class="w-full" id="bg">
   <section class="one">
-    <div class="container col-12">
+    <div class="container col-12" id="">
       <h5 class="card-title fs-2 fw-bold text-decoration-underline text-light text-center"><img src="image/icon2.png"
           class="card-img-top w-25 " alt="..."> SPENDING ALERT</h5>
       <div class="row col-12 col-sm-12">
@@ -42,13 +42,23 @@
     <div class="text-center mx-auto">
       <button type="button"
         class="w-50 text-center fw-bolder form-fluid mx-auto shadow-none btn btn-warning animate__animated animate__rubberBand animate__infinite	infinite"
-        style="display: none;" id="auto">AUTOMATE</button>
+        style="display: none;" id="auto" onclick="spend()">AUTOMATE</button>
     </div>
   </section>
 
-  <!-- <section class="two"> -->
-    <!-- <div class="master-container">
-      <div class="card cart">
+  <section class="two">
+    <div class="master-container" id="general" style="display:none;" >
+      <div class="card coupons mx-auto w-50">
+        <label class="title">Apply coupons</label>
+        <form class="form">
+          <input type="text" placeholder="Product Name" class="input_field" id="item"><br>
+          <input type="number" placeholder="Quantity" class="input_field" id="price"><br>
+          <input type="number" placeholder="Amount" class="input_field" id="price">
+        </form>
+        <button class="btn btn-danger" id="apple" onclick="mango()">Apply</button>
+      </div>
+
+      <!-- <div class="card cart mx-auto w-50">
         <label class="title">Your cart</label>
         <div class="products">
           <div class="product">
@@ -73,7 +83,7 @@
               <p>Extra Spicy</p>
               <p>No mayo</p>
             </div>
-            <div class="quantity">
+            <div class="quantity mx-auto">
               <button>
                 <svg fill="none" viewBox="0 0 24 24" height="14" width="14" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" stroke="#47484b"
@@ -90,18 +100,12 @@
             </div>
             <label class="price small">$23.99</label>
           </div>
-        </div>
-      </div>
-
-      <div class="card coupons">
-        <label class="title">Apply coupons</label>
-        <form class="form">
-          <input type="text" placeholder="Apply your coupons here" class="input_field">
           <button>Apply</button>
-        </form>
-      </div>
+        </div>
+      </div> -->
 
-      <div class="card checkout">
+      
+      <div class="card checkout mx-auto w-50" style="display:none;" >
         <label class="title">Checkout</label>
         <div class="details">
           <span>Your cart subtotal:</span>
@@ -116,19 +120,10 @@
           <button class="checkout-btn">Checkout</button>
         </div>
       </div>
-    </div> -->
-
-    <!-- <input class="mb-1" type="text" placeholder="Default input" aria-label="default input example">
-      <input class="mb-1" type="text" placeholder="Default input" aria-label="default input example">
-      <input class="mb-1" type="text" placeholder="Default input" aria-label="default input example"> -->
-  <!-- </section> -->
+    </div>
+  </section>
 
   <section class="three">
-    <!-- Button trigger modal -->
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
-  </button> -->
-
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
